@@ -3,7 +3,7 @@ from datetime import datetime
 
 from dotenv import load_dotenv
 
-from src import crawler
+import crawler
 
 load_dotenv()
 
