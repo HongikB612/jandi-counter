@@ -19,13 +19,13 @@ num_weeks: int = 2
 ```
 
 `organization_name`에 자신의 organization 이름을 추가하면, 해당 Organization의 member들이 git contribution를 추적할 수 있습니다.
-`token`에는 깃허브의 API 토큰을 추가해야 합니다. 
-우선 [https://github.com/settings/tokens](https://github.com/settings/tokens)으로 이동하여 토큰을 발급받습니다.
-이때 토큰의 권한에 **"read:org"** 권한이 반드시 체크되어 있어야 합니다. 토큰의 사용 용도(이름)와 만료 기한을 적절히 정하고, 완료하여 토큰을 발급받습니다.
-이 토큰을 복사하여 붙여넣습니다.
-이때 `token = 2932r09fklsdfe...` 이런 식으로 붙여넣어도 되고, `.env` 파일을 만들어 붙여넣어도 됩니다. 나는 `.env` 파일 이용함.
-`start_date_str`은 시작 날짜입니다. 통계의 집계 시작 날짜를 집어넣어주시면 됩니다.
-`num_weeks`는 이벤트 기간으로 2면 2주일을 뜻함.
+`token`에는 깃허브의 API 토큰을 추가해야 합니다.<br>
+우선 [https://github.com/settings/tokens](https://github.com/settings/tokens)으로 이동하여 토큰을 발급받습니다.<br>
+이때 토큰의 권한에 **"read:org"** 권한이 반드시 체크되어 있어야 합니다. 토큰의 사용 용도(이름)와 만료 기한을 적절히 정하고, 완료하여 토큰을 발급받습니다.<br>
+이 토큰을 복사하여 붙여넣습니다.<br>
+이때 `token = 2932r09fklsdfe...` 이런 식으로 붙여넣어도 되고, `.env` 파일을 만들어 붙여넣어도 됩니다. 나는 `.env` 파일 이용함.<br>
+`start_date_str`은 시작 날짜입니다. 통계의 집계 시작 날짜를 집어넣어주시면 됩니다. <br>
+`num_weeks`는 이벤트 기간입니다(주 단위). 예를 들어 2면 2주일을 뜻함.
 
 3. 실행하기
 ```bash
