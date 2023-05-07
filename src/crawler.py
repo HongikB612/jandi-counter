@@ -27,10 +27,11 @@ def get_contribution_data(username: str, event_start_date: datetime):
 
 
 def extract_contribution_count(count_text: str):
-    match = re.search(r'(\d+) contributions', count_text)
+    match = re.search(r'(\d+) contribution(?:s)?', count_text)
     if match:
         return int(match.group(1))
     else:
+        print(count_text)
         return 0
 
 
