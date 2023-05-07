@@ -31,7 +31,6 @@ def extract_contribution_count(count_text: str):
     if match:
         return int(match.group(1))
     else:
-        print(count_text)
         return 0
 
 
