@@ -70,7 +70,6 @@ def save_daily_contributions_to_file(usernames: list[str], contribution_data: di
             writer.writerow(row)
 
 
-
 def fetch_members_from_organization(organization_name: str, token: str):
     api_url = f'https://api.github.com/orgs/{organization_name}/members'
     headers = {'Authorization': f'token {token}', 'Accept': 'application/vnd.github+json'}
